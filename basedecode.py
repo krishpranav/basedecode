@@ -1,9 +1,9 @@
 #!/usr/bin/env/python
 # a simple tool created on python for decoding data in base64
 # tool author: krishpranav
+#github.com/krishpranav
 
 #imports
-
 import os, re, sys, time, platform, json, argparse
 from colorama import init
 from termcolor import colored
