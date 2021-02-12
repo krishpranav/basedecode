@@ -84,6 +84,7 @@ class BaseCrack:
                     base36.dumps(int(encoded_base)),
                     'Base36'
                 )
+
             except:
                 pass
             # decoding as base58
@@ -140,14 +141,6 @@ class BaseCrack:
                 process_decode(
                     base91.decode(encoded_base).decode('utf-8', 'replace'),
                     'Base91'
-                )
-            except:
-                pass
-            # decoding as base92
-            try:
-                process_decode(
-                    base92.decode(encoded_base),
-                    'Base92'
                 )
             except:
                 pass
