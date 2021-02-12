@@ -14,3 +14,13 @@ A simple python tool for decoding base64 data
 - cd basedecode
 - python3 -m pip install -r requirements.txt
 - python3 basedecode.py
+
+# Steps To Run this Tool On Windows:
+- apt update
+- apt install python3
+- apt install python3-pip
+- git clone https://github.com/krishpranav/basedecode
+- cd basedecode
+- sudo chmod +X *
+- python3 -m pip install -r requirements.txt
+- python3 basedecode.py
