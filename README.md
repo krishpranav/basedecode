@@ -6,4 +6,6 @@ A simple python tool for decoding base64 data
 - cd basedecode
 - sudo chmod +x *
 - python3 -m pip install -r requirements.txt
+- python3 basedecode.py
+
 
