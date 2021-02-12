@@ -12,7 +12,7 @@ from termcolor import colored
 import base36, base58, base62, base64, base91
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "lib"))
-import base92
+
 
 
 class BaseCrack:
