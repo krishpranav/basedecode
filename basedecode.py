@@ -148,7 +148,6 @@ class BaseCrack:
                     print(colored('\n[!] Not a valid encoding.\n', 'red'))
                 if self.quit_after_fail: quit()
 
-            # print/return the results
             for x in range(len(results)):
                 if not self.api_call:
                     print(colored('\n[-] The Encoding Scheme Is ', 'blue') + colored(encoding_type[x], 'green'))
