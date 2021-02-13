@@ -360,7 +360,7 @@ def main():
             BaseCrack().decode_base(encoded_base)
 
     if args.output:
-        print(colored('\n[-] Output Generated Successfully > ', 'green') + colored(args.output + '\n', 'yellow'))
+        print(colored('\n[-] Output Generated Successfully >> ', 'green') + colored(args.output + '\n', 'yellow'))
 
 
 if __name__ == '__main__':
