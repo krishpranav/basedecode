@@ -5,14 +5,6 @@ __author__ = 'krishpranav'
 __version__ = '1.0'
 __github__ = 'https://github.com/krishpranav'
 
-# import os, re, sys, time, platform, json, argparse
-# from colorama import init
-# from termcolor import colored
-
-# import base36, base58, base62, base64, base91
-
-# sys.path.append(os.path.join(os.path.dirname(__file__), "lib"))
-
 # imports
 import os
 import re
