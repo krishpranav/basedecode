@@ -27,7 +27,7 @@ class BaseCrack:
         self.b64_url = False
         self.current_iter_base = None
 
-    # main decode function
+    #main decode function
     def decode_base(self, encoded_base):
         def contains_replacement_char(res):
             if u'\ufffd' in res:
@@ -37,11 +37,9 @@ class BaseCrack:
                 for char in res:
                     if ord(char) > 127: count += 1
                 return True if count > 0 else False
-
-        # to store the encoding schemes which haven't caused errors
+    
         encoding_type = []
 
-        # to store the decoded results which haven't caused errors
         results = []
 
         def process_decode(decode_string, scheme):
