@@ -179,10 +179,7 @@ class BaseCrack:
         self.api_call = True
         return self.decode_base(encoded_base)
 
-    def magic_mode(self, encoded_base):
-        """
-        `magic_mode()` tries to decode multi-encoded bases of any pattern
-        """
+    def magic_mode(self, encoded_base): 
         iteration = 0
         result = None
         encoding_pattern = []
@@ -272,6 +269,8 @@ class BaseCrack:
                 self.decode_base(base)
 
 
+
+
 def banner():
     banner = '''
             BASE--DECODE
@@ -343,7 +342,6 @@ def main():
         )
 
     else:
-        # input() for python2 is actually eval() :face_palm:
         if sys.version_info >= (3, 0):
             encoded_base = input(colored('[>] Enter Encoded Base: ', 'yellow'))
         else:
