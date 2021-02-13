@@ -276,7 +276,7 @@ def banner():
     banner = '''
             BASE--DECODE
     '''
-    print(colored(banner, 'red') + colored('\n\t\tpython basecrack.py -h [FOR HELP]\n', 'green'))
+    print(colored(banner, 'red') + colored('\n\t\tpython basedecode.py -h [FOR HELP]\n', 'green'))
 
 
 def main():
