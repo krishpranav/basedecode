@@ -52,7 +52,6 @@ class BaseCrack:
         def process_decode(decode_string, scheme):
             if len(decode_string) < 3: return
             if not contains_replacement_char(decode_string):
-                # don't repeat `base64url` when `base64` has already passed and it's not a URL
                 if scheme == 'Base64' and '://' not in decode_string: self.b64_once = True
                 if self.b64_once and (scheme == 'Base64URL'): return
 
@@ -83,7 +82,6 @@ class BaseCrack:
                 )
             except:
                 pass
-            # decoding as base36
             try:
                 process_decode(
                     base36.dumps(int(encoded_base)),
@@ -92,7 +90,6 @@ class BaseCrack:
 
             except:
                 pass
-            # decoding as base58
             try:
                 process_decode(
                     base58.b58decode(encoded_base.encode()).decode('utf-8', 'replace'),
@@ -100,7 +97,6 @@ class BaseCrack:
                 )
             except:
                 pass
-            # decoding as base62
             try:
                 process_decode(
                     base62.decodebytes(encoded_base).decode('utf-8', 'replace'),
@@ -108,7 +104,6 @@ class BaseCrack:
                 )
             except:
                 pass
-            # decoding as base64
             try:
                 process_decode(
                     base64.b64decode(encoded_base).decode('utf-8', 'replace'),
@@ -116,7 +111,6 @@ class BaseCrack:
                 )
             except:
                 pass
-            # decoding as base64url
             try:
                 process_decode(
                     base64.urlsafe_b64decode(encoded_base + '=' * (4 - len(encoded_base) % 4)).decode('utf-8',
