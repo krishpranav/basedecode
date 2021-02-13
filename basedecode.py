@@ -180,7 +180,6 @@ class BaseCrack:
 
     def decode(self, encoded_base):
         self.api_call = True
-        # api calls returns a tuple with the decoded base and the encoding scheme
         return self.decode_base(encoded_base)
 
     def magic_mode(self, encoded_base):
@@ -276,7 +275,6 @@ class BaseCrack:
                 self.decode_base(base)
 
 
-# print a kickass banner to look cool
 def banner():
     banner = '''
             BASE--DECODE
