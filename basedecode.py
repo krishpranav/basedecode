@@ -299,10 +299,6 @@ def main():
         print(colored('\n[>] ', 'yellow') + colored('Enabled Wordlist Generator Mode :: ', 'green') + colored(
             args.output + '\n', 'blue'))
 
-    """
-    decodes base encodings from file if argument is given
-    else it accepts a single encoded base from user
-    """
     if args.file:
         if args.magic:
             BaseCrack(output=args.output, magic_mode_call=True).decode_from_file(str(args.file))
